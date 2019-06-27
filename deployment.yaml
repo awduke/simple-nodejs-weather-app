@@ -1,0 +1,31 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    k8s-app: node-web-app
+  name: node-web-app
+  namespace: k8s-demo
+spec:
+  replicas: 1
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        k8s-app: node-web-app
+    spec:
+      containers:
+        -
+          image: node:8
+          command: ['/bin/sh', '-c']
+          args: ['cd /home && git clone https://github.com/azatsarynnyy/simple-nodejs-weather-app.git demo && cd demo/ && npm install && npm start']
+          imagePullPolicy: Always
+          name: node-web-app
+          ports:
+            -
+              containerPort: 3000
+              name: app-port
+              protocol: TCP
