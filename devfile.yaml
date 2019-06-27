@@ -4,8 +4,7 @@ metadata:
 components:
   - type: cheEditor
     id: 'eclipse/che-theia/next'
-  - alias: k8s-plugin
-    type: chePlugin
+  - type: chePlugin
     reference: https://raw.githubusercontent.com/awduke/che-plugin-registry/master/plugins/ms-k8s-tools.vscode-k8s-tools/0.1.17/meta.yaml
   - type: chePlugin
     id: 'redhat/vscode-yaml/0.4.0'
