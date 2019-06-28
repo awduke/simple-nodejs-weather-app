@@ -5,7 +5,7 @@ components:
   - type: cheEditor
     id: 'eclipse/che-theia/next'
   - type: chePlugin
-    registryUrl: http://che-plugin-registry-che.192.168.99.100.nip.io
-    id: 'ms-kubernetes-tools.vscode-kubernetes-tools/0.1.17'
+    registryUrl: http://che-plugin-registry-che.192.168.99.100.nip.io/v3
+    id: 'ms-kubernetes-tools/vscode-kubernetes-tools/0.1.17'
   - type: chePlugin
     id: 'redhat/vscode-yaml/0.4.0'
