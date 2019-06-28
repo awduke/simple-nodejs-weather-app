@@ -1,6 +1,6 @@
 apiVersion: 1.0.0
 metadata:
-  name: simple-nodejs-devfile
+  name: k8s-plugin
 components:
   - type: cheEditor
     id: 'eclipse/che-theia/next'
