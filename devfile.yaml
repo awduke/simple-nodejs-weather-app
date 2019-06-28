@@ -5,6 +5,6 @@ components:
   - type: cheEditor
     id: 'eclipse/che-theia/next'
   - type: chePlugin
-    reference: https://raw.githubusercontent.com/awduke/che-plugin-registry/master/plugins/ms-k8s-tools.vscode-k8s-tools/0.1.17/meta.yaml
+    id: 'ms-kubernetes-tools/vscode-kubernetes-tools/0.1.17'
   - type: chePlugin
     id: 'redhat/vscode-yaml/0.4.0'
