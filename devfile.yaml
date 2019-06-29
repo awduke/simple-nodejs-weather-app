@@ -1,6 +1,11 @@
 apiVersion: 1.0.0
 metadata:
   name: k8s-node-web-app
+projects:
+  - name: demo
+    source:
+      type: git
+      location: https://github.com/awduke/simple-nodejs-weather-app.git
 components:
   - type: cheEditor
     id: 'eclipse/che-theia/next'
