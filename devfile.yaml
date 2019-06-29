@@ -1,6 +1,6 @@
 apiVersion: 1.0.0
 metadata:
-  name: k8s-node-web-app
+  name: simple-nodejs-weather-app
 projects:
   - name: demo
     source:
