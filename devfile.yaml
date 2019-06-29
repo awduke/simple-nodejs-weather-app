@@ -1,6 +1,6 @@
 apiVersion: 1.0.0
 metadata:
-  name: k8s-plugin-app
+  name: k8s-nodejs-app
 projects:
 - name: simple-nodejs-weather-app
   source:
@@ -9,8 +9,10 @@ projects:
 components:
   - type: cheEditor
     id: 'eclipse/che-theia/next'
-  - type: chePlugin
+  - alias: k8s-plugin
+    type: chePlugin
     registryUrl: http://che-plugin-registry-che.192.168.99.101.nip.io/v3/
     id: 'ms-kubernetes-tools/vscode-k8s-tools/0.1.17'
+    memoryLimit: 1G
   - type: chePlugin
     id: 'redhat/vscode-yaml/0.4.0'
