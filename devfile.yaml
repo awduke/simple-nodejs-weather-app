@@ -11,7 +11,7 @@ components:
     id: 'eclipse/che-theia/next'
   - type: chePlugin
     alias: k8s-plugin
-    registryUrl: http://che-plugin-registry-che.192.168.99.101.nip.io/v3/
+    registryUrl: http://che-plugin-registry-che.192.168.99.100.nip.io/v3/
     id: 'ms-kubernetes-tools/vscode-k8s-tools/latest'
     memoryLimit: 1G
   - type: chePlugin
