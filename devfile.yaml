@@ -13,7 +13,6 @@ components:
   - alias: k8s-plugin
     type: chePlugin
     registryUrl: http://che-plugin-registry-che.192.168.99.100.nip.io/v3/
-    id: 'ms-kubernetes-tools/vscode-k8s-tools/latest'
-    memoryLimit: 1G
+    id: 'ms-kubernetes-tools/vscode-k8s-tools/1.0.0'
   - type: chePlugin
     id: 'redhat/vscode-yaml/latest'
