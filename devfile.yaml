@@ -9,6 +9,8 @@ projects:
 components:
   - alias: theia-editor
     type: cheEditor
+    reference: >-
+      https://raw.githubusercontent.com/eclipse/che-plugin-registry/master/v3/plugins/eclipse/che-theia/next/meta.yaml
     id: eclipse/che-theia/next
   - alias: k8s-plugin
     type: chePlugin
