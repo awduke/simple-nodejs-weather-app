@@ -1,16 +1,17 @@
 apiVersion: 1.0.0
 metadata:
-  name: k8s-node-web-app
+  name: nodejs-devfile
 projects:
-  - name: simple-nodejs-weather-app
+  - name: weather-app-devfile
     source:
       type: git
-      location: https://github.com/awduke/simple-nodejs-weather-app.git
+      location: 'https://github.com/awduke/simple-nodejs-weather-app.git'
 components:
-  - type: cheEditor
-    id: 'eclipse/che-theia/next'
-  - type: chePlugin
-    alias: k8s-plugin
+  - alias: theia-editor
+    type: cheEditor
+    id: eclipse/che-theia/next
+  - alias: k8s-plugin
+    type: chePlugin
     registryUrl: http://che-plugin-registry-che.192.168.99.100.nip.io/v3/
     id: 'ms-kubernetes-tools/vscode-k8s-tools/latest'
     memoryLimit: 1G
